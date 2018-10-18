@@ -66,7 +66,7 @@ class App extends Component {
   }
 
   updateFinal(updates) {
-    this.setState({final : {...this.state.final , ...updates}})
+    this.setState({final : {...this.state.final , ...updates}}, () => {console.log(this.state.final)})
   }
 
   getCompenentForStage()  {
@@ -91,7 +91,7 @@ class App extends Component {
   render() {
     const componentToDisplay = this.getCompenentForStage();
     return (
-      <div className="App">
+      <div className="App center-align container">
         {componentToDisplay}
       </div>
     );

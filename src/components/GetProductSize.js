@@ -1,7 +1,7 @@
 import React from 'react';
 
 function GetProductSize(props) {
-    return;
+    return <div />;
 }
 
 export default GetProductSize;

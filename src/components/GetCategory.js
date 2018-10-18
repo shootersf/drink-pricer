@@ -24,7 +24,7 @@ function GetCategory(props) {
     }
 
     return (
-        <div className="green-text text-darken-2 center-align">
+        <div className="green-text text-darken-2">
             <h3>Please Select the Type of Product:</h3>
             <Chooser options={options} optionSelected={optionSelected} />
         </div>
