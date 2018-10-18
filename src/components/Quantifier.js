@@ -47,10 +47,12 @@ class Quantifier extends Component {
     }
 
     render() {
+        const iconClass = (this.props.currency) ? "fas fa-euro-sign prefix" : "hide";
         return (
             <form onSubmit={this.quantitySubmitted.bind(this)}>
                 <div className="row">
                     <div className="input-field col s6 push-s3">
+                        <i className={iconClass}></i>
                         <label className="active">{this.props.label}</label>
                         <input type="number" onFocus={this.inputFocusHandler}  min={this.props.min} step={this.state.step} value={this.state.value} onChange={this.updateValue.bind(this)} />
                         <button className="btn" disabled={this.state.buttonDisable}>SUBMIT</button>

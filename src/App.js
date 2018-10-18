@@ -5,6 +5,7 @@ import GetQuantity from './components/GetQuantity';
 import GetProductSize from './components/GetProductSize';
 import GetServingSize from './components/GetServingSize';
 import GetProductCost from './components/GetProductCost';
+import Final from './components/Final';
 
 class App extends Component {
 
@@ -85,6 +86,10 @@ class App extends Component {
     if (Component)
     {
       return <Component currentFinal={this.state.final} updateFinal={this.updateFinal.bind(this)} getItems={this.getItems.bind(this)} getItem={this.getItem.bind(this)} />;
+    }
+    else
+    {
+      return <Final final={this.state.final} />
     }
   }
 
