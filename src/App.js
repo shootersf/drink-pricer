@@ -60,16 +60,13 @@ class App extends Component {
     return this.props.items;
   }
 
-  //Uses the final state's category to grab the item it belongs to along with all it's properties.
-  getCurrentItem() {
-    if(this.state.final.category)
-      return this.props.items.find( item => item.category === this.state.final.category);
-    else
-      return null;
+  //Uses the category to grab the item it belongs to along with all it's properties.
+  getItem(category) {
+    return this.props.items.find( item => item.category === category);
   }
 
   updateFinal(updates) {
-
+    this.setState({final : {...this.state.final , ...updates}})
   }
 
   getCompenentForStage()  {
@@ -87,7 +84,7 @@ class App extends Component {
 
     if (Component)
     {
-      return <Component updateFinal={this.updateFinal.bind(this)} getItems={this.getItems.bind(this)} getCurrentItem={this.getCurrentItem.bind(this)} />;
+      return <Component currentFinal={this.state.final} updateFinal={this.updateFinal.bind(this)} getItems={this.getItems.bind(this)} getItem={this.getItem.bind(this)} />;
     }
   }
 

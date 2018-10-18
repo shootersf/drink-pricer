@@ -1,9 +1,11 @@
 import React from 'react';
 
-function Option({option}) {
+function Option({option, optionSelected}) {
+
+
     return (
         <div className="col s12">
-        <button className="btn">{option}</button>
+        <button className="btn" onClick={() => {optionSelected(option)}}>{option}</button>
         </div>
     );
 }

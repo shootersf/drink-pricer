@@ -1,7 +1,9 @@
 import React from 'react';
 
 function CheckMultiPack(props) {
-    return;
+    return (
+        <div />
+    );
 }
 
 export default CheckMultiPack;
