@@ -5,7 +5,6 @@ function CheckMultiPack(props) {
     
     const options = ["Individually", "By Case"];
     const product = props.currentFinal.category.charAt(0).toUpperCase() + props.currentFinal.category.slice(1).toLowerCase();
-    console.log(product);
 
     const optionSelected = (option) => {
         const update = {};

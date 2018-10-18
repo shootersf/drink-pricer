@@ -41,14 +41,18 @@ class Quantifier extends Component {
         this.props.submit(this.state.value);
     }
 
+    //selects the default text inside for easier updating
+    inputFocusHandler(e) {
+        e.target.select();
+    }
 
     render() {
         return (
             <form onSubmit={this.quantitySubmitted.bind(this)}>
                 <div className="row">
                     <div className="input-field col s6 push-s3">
-                        <label className="active">Number of Bottles</label>
-                        <input type="number" min={this.props.min} step={this.state.step} value={this.state.value} onChange={this.updateValue.bind(this)} />
+                        <label className="active">{this.props.label}</label>
+                        <input type="number" onFocus={this.inputFocusHandler}  min={this.props.min} step={this.state.step} value={this.state.value} onChange={this.updateValue.bind(this)} />
                         <button className="btn" disabled={this.state.buttonDisable}>SUBMIT</button>
                     </div>
                 </div>
