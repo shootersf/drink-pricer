@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/drink-pricer/precache-manifest.64c492a3217a8f08744c6cd6fe1a2d39.js"
+  "/drink-pricer/precache-manifest.cb8ea941b3843f3c8273adc598fa094f.js"
 );
 
 workbox.clientsClaim();
