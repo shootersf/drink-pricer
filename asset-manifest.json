@@ -1,13 +1,13 @@
 {
   "main.css": "/drink-pricer/static/css/main.8ad50882.chunk.css",
-  "main.js": "/drink-pricer/static/js/main.597d5c4f.chunk.js",
-  "main.js.map": "/drink-pricer/static/js/main.597d5c4f.chunk.js.map",
+  "main.js": "/drink-pricer/static/js/main.0ca91306.chunk.js",
+  "main.js.map": "/drink-pricer/static/js/main.0ca91306.chunk.js.map",
   "static/js/1.c1341028.chunk.js": "/drink-pricer/static/js/1.c1341028.chunk.js",
   "static/js/1.c1341028.chunk.js.map": "/drink-pricer/static/js/1.c1341028.chunk.js.map",
   "runtime~main.js": "/drink-pricer/static/js/runtime~main.3df63289.js",
   "runtime~main.js.map": "/drink-pricer/static/js/runtime~main.3df63289.js.map",
   "static/css/main.8ad50882.chunk.css.map": "/drink-pricer/static/css/main.8ad50882.chunk.css.map",
   "index.html": "/drink-pricer/index.html",
-  "precache-manifest.cb8ea941b3843f3c8273adc598fa094f.js": "/drink-pricer/precache-manifest.cb8ea941b3843f3c8273adc598fa094f.js",
+  "precache-manifest.fdafacb46d46d3faabe148d8ee8d2f8c.js": "/drink-pricer/precache-manifest.fdafacb46d46d3faabe148d8ee8d2f8c.js",
   "service-worker.js": "/drink-pricer/service-worker.js"
 }
